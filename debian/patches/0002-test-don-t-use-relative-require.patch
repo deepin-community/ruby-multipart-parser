@@ -1,0 +1,20 @@
+From: Antonio Terceiro <terceiro@debian.org>
+Date: Sat, 14 Mar 2020 05:52:11 -0300
+Subject: test: don't use relative require
+
+This fixes running the test suite under autopkgtest
+---
+ test/multipart_parser/reader_test.rb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/test/multipart_parser/reader_test.rb b/test/multipart_parser/reader_test.rb
+index 7d25a83..d3c8e27 100644
+--- a/test/multipart_parser/reader_test.rb
++++ b/test/multipart_parser/reader_test.rb
+@@ -1,5 +1,5 @@
+ require 'test/unit'
+-require File.dirname(__FILE__) + "/../../lib/multipart_parser/reader"
++require "multipart_parser/reader"
+ require File.dirname(__FILE__) + "/../fixtures/multipart"
+ 
+ module MultipartParser

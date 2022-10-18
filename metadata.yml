@@ -1,0 +1,76 @@
+--- !ruby/object:Gem::Specification
+name: multipart-parser
+version: !ruby/object:Gem::Version
+  version: 0.1.1
+  prerelease: 
+platform: ruby
+authors:
+- Daniel Abrahamsson
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2012-08-22 00:00:00.000000000 Z
+dependencies: []
+description: ! 'multipart-parser is a simple parser for multipart MIME messages, written
+  in
+
+  Ruby, based on felixge/node-formidable''s parser.
+
+
+  Some things to note:
+
+  - Pure Ruby
+
+  - Event-driven API
+
+  - Only supports one level of multipart parsing. Invoke another parser if
+
+  you need to handle nested messages.
+
+  - Does not perform I/O.
+
+  - Does not depend on any other library.
+
+'
+email:
+- hamsson@gmail.com
+executables: []
+extensions: []
+extra_rdoc_files: []
+files:
+- LICENSE
+- README
+- Rakefile
+- lib/multipart_parser/parser.rb
+- lib/multipart_parser/reader.rb
+- lib/multipart_parser/version.rb
+- multipart-parser.gemspec
+- test/fixtures/multipart.rb
+- test/multipart_parser/parser_test.rb
+- test/multipart_parser/reader_test.rb
+homepage: https://github.com/danabr/multipart-parser
+licenses: []
+post_install_message: 
+rdoc_options: []
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  none: false
+  requirements:
+  - - ! '>='
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  none: false
+  requirements:
+  - - ! '>='
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 1.8.24
+signing_key: 
+specification_version: 3
+summary: simple parser for multipart MIME messages
+test_files: []
+has_rdoc: 
